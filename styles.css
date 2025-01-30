@@ -1,0 +1,430 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    background-color: #1F2937;
+    display: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 110px; */
+}
+
+.spacer {
+    padding: 0px 100px;
+}
+
+/* Stuff for header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 120px;
+    background-color: #19222f;
+    flex-wrap: nowrap;
+    border-bottom: 3px inset #111822;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 #000000;
+}
+
+/* .logo {
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 24px;
+    cursor: pointer;
+
+    opacity: 1;
+    animation:alternate;
+} */
+
+/* This was a snippet i added in at the end to look cool. the logo styling above was the original */
+
+.logo {
+    font-size: 24px;
+    font-family: "Rubik Glitch", sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 2.0s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+
+.header-links, .header-links .nav-links{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 16px;
+    cursor: pointer;
+    text-wrap: nowrap;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #4e55d6;
+    transition: 0.5s;
+    font-size: 17px;
+    text-shadow: 0 0 80px #0b162fae;
+    border-radius: 80%;
+}
+
+
+/* Stuff for Hero */
+
+.hero {
+    display: flex;
+    padding: 75px 30px;
+    /* gap: 20px; */
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 3px inset #4a4c58;
+    box-shadow: inset 0 0 10px 0 #000000;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    flex-shrink: 3;    
+}
+
+.hero-info h2 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 100;
+    font-family: "Rubik Glitch", sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.hero-info p {
+    font-size: 18px;
+    color: #E5E7EB;
+    width: 70%;
+    font-weight: 300;
+    
+}
+
+.hero-info button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 700;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color:#131a27
+
+}
+.hero-info button:hover {
+    background-color: #344966;
+    color: #F9FAF8;
+    border: 2px inset #131a27;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hero-img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    max-width: 400px;
+    cursor: pointer;
+
+    min-width: 150px;
+    min-height: 150px;
+
+    border-radius: 8px;
+    border: 2px solid #172937;
+    box-shadow: 2px 2px 6px 0 #000000;
+}
+
+.hero img:hover {
+    box-shadow: 6px 6px 12px 0 #000000;
+    transition: 0.4s;
+}
+
+.hero-caption {
+    align-self: end;
+    color: #5a5d58;
+    font-style: italic;
+    font-size: 13px;
+    flex-shrink: 2;
+}
+
+
+
+/* Boxes Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #F9FAF8;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    flex: auto;
+}
+
+.content h4 {
+    flex: 1;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: "Rubik Glitch", sans-serif;
+    color: #090101;
+    cursor: pointer;
+    padding: 10;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    text-shadow: 0 0 5px #8b8ed7df;
+}
+
+.content h4:hover {
+    font-size: 35px;
+    transition: 0.7s;
+}
+
+.box-containers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: auto;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 4px outset #0070c5;
+    flex: initial;
+    box-shadow: 0 0 5px 0 #000000;
+    flex: auto;
+}
+
+.box img:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 12px 0 #000000;
+    transition: 0.6s;
+}
+
+.box p {
+    margin: 7px;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+
+    font-size: 14px;
+    max-width: 150px;
+    height: 200px;
+    text-align: center;
+    flex: auto;
+    text-wrap: wrap;
+}
+
+
+
+
+/* Quote */
+.quote {
+    cursor: pointer;
+    display: flex;
+    background-color: #E5E7EB;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    width: 100%;
+    border: 2px solid #c0c0c4;
+    box-shadow: 6px 5px 10px 2px #161616;
+    margin-bottom: 0px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 200;
+    font-style: italic;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.quote-text:hover {
+    font-size: 38px;
+    transition: 0.5s;
+}
+
+.quote-author {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+    color: #1F2937; 
+    font-weight: 200;
+    margin-top: 10px;
+    padding: 0;
+    padding-right: 80px;
+    font-family: "Rubik Glitch", sans-serif;
+}
+
+.quote-author:hover {
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+
+
+/* Modal/CTA */
+
+.cta {
+    display: flex;
+    background-image: url(/img/city.jpg);
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px inset #cecbcb;
+    box-shadow: inset 0 0 10px 0 #000000;
+    
+}
+
+.modal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 120px;
+    background-color: #3882F6;
+    padding: 20px 100px;
+    border-radius: 10px;
+    border: 3px outset #6ba6ff;
+    box-shadow: 0 0 10px 0 #212020;
+
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    max-width: 50%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.modal-text h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.modal-text p {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+
+}
+
+.modal button {
+    width: 140px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white;
+    font-weight: 700;
+    font-size: 15px;
+
+    cursor: pointer;
+
+}
+
+.modal button:hover {
+    background-color: #344966;
+    color: #F9FAF8;
+    border: 2px inset #3882F6;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+/* Footer styles */
+footer {
+    display: flex;
+    background-color: #1F2937;
+    color: #F9FaF8;
+    font-weight: 100;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px outset #111822;
+    box-shadow: 0 0 8px 0 #000000;
+}
